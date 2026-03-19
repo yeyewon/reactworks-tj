@@ -1,0 +1,35 @@
+// 배열 생성
+let fruits = ['사과', '배', '포도', '바나나'];
+
+console.log(fruits);
+
+// 배열 요소에 접근
+const result = document.getElementById('result');
+result.innerHTML = '첫번째 과일:' + fruits[0] + '<br>'
+result.innerHTML += '두번째 과일:' + fruits[1] + '<br>'
+
+// 배열의 길이
+result.innerHTML += `과일의 총 갯수: ${fruits.length} <br>`
+
+// 전체 배열 요소
+for(let i=0; i<fruits.length; i++){
+    result.innerHTML += `과일 ${i+1}: ${fruits[i]} <br>`
+}
+
+// 배열 요소 추가 - push()
+fruits.push('오렌지');
+for(let i=0; i<fruits.length; i++){
+    result.innerHTML += `과일 ${i+1}: ${fruits[i]} <br>`
+}
+
+// 배열 요소 삭제 - pop()
+fruits.pop();
+for(let i=0; i<fruits.length; i++){
+    result.innerHTML += `과일 ${i+1}: ${fruits[i]} <br>`
+}
+
+// 배열 요소 변경
+fruits[1] = '딸기'
+for(let i=0; i<fruits.length; i++){
+    result.innerHTML += `과일 ${i+1}: ${fruits[i]} <br>`
+}

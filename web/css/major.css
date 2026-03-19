@@ -1,0 +1,6 @@
+#wrap{width: 400px; margin: 0 auto;}
+form{display: flex; flex-direction: column; gap: 10px;}
+ul li{list-style: none; margin: 10px 0;}
+ul li label{width: 100px; float: left;}
+ul li input{width: 50%; padding: 5px;}
+select{width: 50%; padding: 10px;}

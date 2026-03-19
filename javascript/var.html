@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수와 자료형</title>
+</head>
+<body>
+    <!-- 변수 -->
+    <script>
+        // 1.숫자형
+        let age = 25;
+        let temp = 24.5;
+
+        console.log('나이:', age);
+        //console.log('나이:' + age);
+        console.log('온도:', temp);
+        console.log(typeof(age));
+
+        // 2.문자형
+        let player = '이정우'
+        let city = '샌프란시스코'
+
+        console.log(player);
+        console.log(typeof(player));
+
+        // 3.논리형
+        let isRaining = false;
+
+        console.log(isRaining);
+        console.log(typeof(isRaining));
+
+        // 4.undefined-미할당
+        let score;
+        
+        console.log('점수:', score);
+
+        // 5.배열
+        let fruits = ['사과','딸기','바나나'];
+
+        console.log(fruits);
+        console.log(typeof(fruits));
+
+        // 6.객체-object
+        let student = {
+            name: '이장우',
+            age: 10,
+            city: '서울'
+        }
+
+        console.log(student);
+        console.log(typeof(student));
+        console.log(student.city);
+    </script>
+</body>
+</html>
