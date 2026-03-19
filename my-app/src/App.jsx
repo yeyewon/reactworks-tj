@@ -2,6 +2,7 @@ import './App.css'
 // import picture from './assets/hero.png'
 import Example01 from '../components/Example01.jsx'
 import Example02 from '../components/Example02.jsx'
+import Event from '../components/event.jsx'
 
 // 버튼 컴포넌트
 // function MyButton(){
@@ -29,8 +30,9 @@ function App() {
       <div>
         {/* <p>Good Luck <br />행운을 </p> */}
         {/* <MyButton /> */}
-        <Example01 />
-        <Example02 />
+        {/* <Example01 />
+        <Example02 /> */}
+        <Event />
       </div>
     </>
   )

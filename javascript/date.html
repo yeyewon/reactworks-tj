@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date 객체</title>
+</head>
+<body>
+    <script>
+        const now = new Date();
+        console.log(now);
+
+        let time = now.toLocaleString(); // 날짜,시간
+        time = now.toDateString(); // 날짜
+        time = now.toLocaleTimeString(); // 시간
+        console.log(time);
+        
+        // 날짜
+        console.log(now.getFullYear());
+        console.log(now.getMonth()+1);
+        console.log(now.getDate());
+
+        // 시간
+        console.log(now.getHours());
+        console.log(now.getMinutes());
+        console.log(now.getSeconds());
+        console.log(now.getTime());
+    </script>
+</body>
+</html>
