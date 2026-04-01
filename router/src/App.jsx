@@ -14,9 +14,9 @@ function App() {
           <Header />
           {/* <Main /> */}
           <Routes>
-            <Route path='/' element={<Main/>}></Route>
-            <Route path='/products' element={<ProductList/>}></Route>
-            <Route path='/products:id' element={<ProductInfo/>}></Route>
+            <Route path='/' element={<Main />}></Route>
+            <Route path='/products' element={<ProductList />}></Route>
+            <Route path='/products/:id' element={<ProductInfo />}></Route>
           </Routes>
         </BrowserRouter>
       </div>
