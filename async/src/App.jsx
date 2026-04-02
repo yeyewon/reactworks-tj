@@ -5,6 +5,8 @@ import Todos from './todos/Todos'
 import AxiosGet from '../src/axios/AxiosGet'
 import AxiosGetById from './axios/AxiosGetById'
 import AxiosPost from './axios/AxiosPost'
+import FetchGet from './components/FetchGet'
+import FetchGetById from './components/FetchGetById'
 
 function App() {
 
@@ -16,7 +18,9 @@ function App() {
         {/* <Todos /> */}
         {/* <AxiosGet /> */}
         {/* <AxiosGetById id={2} /> */}
-        <AxiosPost />
+        {/* <AxiosPost /> */}
+        <FetchGet />
+        {/* <FetchGetById id={3} /> */}
       </section>
     </>
   )
