@@ -7,12 +7,12 @@ const FetchExample = () => {
     // useEffect(): 컴포넌트 마운트될 때 한 번만 실행됨
     useEffect(() => {
         fetch("https://jsonplaceholder.typicode.com/todos/")
-            .then((response) => response.json()) // json -> js 객체로 변화
-            .then((result) => {
+            .then(response => response.json()) // json -> js 객체로 변화
+            .then(result => {
                 setData(result);
                 console.log(result); // 객체
             })
-        .catch((error) => console.log(error));
+        .catch(error => console.log(error));
     }, [])
 
     return (
