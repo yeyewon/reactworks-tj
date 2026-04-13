@@ -70,7 +70,7 @@ h1,
 h2 {
   font-family: var(--heading);
   font-weight: 500;
-  /* color: var(--text-h); */
+  color: var(--text-h);
 }
 
 h1 {
@@ -108,4 +108,12 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+}
+
+input {
+  padding: 5px 10px;
+}
+button {
+  margin: 3px;
+  padding: 5px 10px;
 }

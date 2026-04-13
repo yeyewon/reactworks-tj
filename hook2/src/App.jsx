@@ -1,18 +1,24 @@
-import CounterReducer from './reducer/CounterReducer'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
-import User from './context/user'
-import Counter from './ref/Counter'
-import InputFocus from './ref/InputFocus'
+import Header from './layouts/Header'
+import BankReducer from './reducer/BankReducer'
+import CounterReducer from './reducer/CounterReducer'
+import ParentTheme from './context/ParentTheme'
 
 function App() {
 
   return (
     <>
       <section id='container'>
-        {/* <Counter /> */}
-        {/* <InputFocus /> */}
-        {/* <CounterReducer/> */}
-        <User />
+        <BrowserRouter>
+          <Header />
+          <Routes>
+            <Route path='/' element={<BankReducer />} />
+            <Route path='/bank' element={<BankReducer />} />
+            <Route path='/counter' element={<CounterReducer />} />
+            <Route path='/theme' element={<ParentTheme />} />
+          </Routes>
+        </BrowserRouter>
       </section>
     </>
   )

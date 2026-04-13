@@ -1,0 +1,3 @@
+.header{margin: 30px auto;}
+.header a{margin: 0 20px; font-size: 20px; text-decoration: none; color: #000;}
+.header a:hover{color: #bbb;}
